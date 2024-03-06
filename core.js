@@ -22,7 +22,7 @@ const randomInsult = {
   noun_4: ['apple sucker', 'idiot', 'eye sore', 'armpit licker', 'ear ache', 'airhead', 'elf', 'ogre', 'orphan', 'elbow picker'],
   animals: ['goat', 'cat', 'chicken', 'donkey', 'dog', 'snake', 'monkey', 'rat', 'elephant', 'whale'],
   adjective_1: ['strange', 'gay', 'stupid', 'yellow', 'putrid', 'cold', 'skinny', 'smelly', 'wimpy', 'wretched', 'gigantic', 'tiny', 'disturbing'],
-  adjective_2: ['dirty', 'nerdy', 'dry', 'fat', 'pink', 'slimy', 'green', 'hairy', 'gooey', 'icky', 'orange', 'purple', 'nutty', 'grotesque', 'moldy', 'ugly']
+  adjective_2: ['dirty', 'nerdy', 'dry', 'fat', 'pink', 'slimy', 'green', 'hairy', 'gooey', 'purple', 'nutty', 'grotesque', 'moldy', 'ugly']
 };
 
 //combine noun_1 noun_2 noun_3
@@ -44,7 +44,7 @@ const lotsOVerbs2 = ['bit', 'squished', 'sniffed', 'ate', 'punched', 'kicked', '
 
 //adjective_1 adjective_2
 const lotsOAdjs = ['strange', 'gay', 'stupid', 'yellow', 'putrid', 'cold', 'skinny', 'smelly', 'wimpy', 'wretched', 'gigantic', 'tiny', 'disturbing',
-'nerdy', 'dry', 'fat', 'pink', 'slimy', 'green', 'hairy', 'gooey', 'icky', 'orange', 'purple', 'nutty', 'grotesque', 'moldy', 'ugly'];
+'nerdy', 'dry', 'fat', 'pink', 'slimy', 'green', 'hairy', 'gooey', 'purple', 'nutty', 'grotesque', 'moldy'];
 
 const Numbers = ['147', '1k', '3049', '69', '21 million'];
 
