@@ -46,7 +46,8 @@ const lotsOVerbs2 = ['bit', 'squished', 'sniffed', 'ate', 'punched', 'kicked', '
 const lotsOAdjs = ['strange', 'gay', 'stupid', 'yellow', 'putrid', 'cold', 'skinny', 'smelly', 'wimpy', 'wretched', 'gigantic', 'tiny', 'disturbing',
 'nerdy', 'dry', 'fat', 'pink', 'slimy', 'green', 'hairy', 'gooey', 'purple', 'nutty', 'grotesque', 'moldy'];
 
-const Numbers = ['147', '1k', '3049', '69', '21 million'];
+//const Numbers = ['147', '1k', '3049', '69', '21 million'];
+const Numbers = Math.floor(Math.random() * 1000);
 
 //add plural objects with 's'
 const lotsOPluralNouns = ['rats', 'goats', 'cats', 'moms', 'chickens', 'donkeys', 'sons', 'dogs', 'snakes', 'monkeys', 'orphans',
@@ -72,7 +73,7 @@ function insultToString() {
   const adj_1Set = randomInsult.adjective_1[Math.floor(Math.random() * randomInsult.adjective_1.length)];
   const adj_2Set = randomInsult.adjective_2[Math.floor(Math.random() * randomInsult.adjective_2.length)];
   const adjSpecialSet = lotsOAdjs[Math.floor(Math.random() * lotsOAdjs.length)];
-  const numberSet = Numbers[Math.floor(Math.random() * Numbers.length)]; //NEW
+  const numberSet = Numbers;//Numbers[Math.floor(Math.random() * Numbers.length)]; //NEW
   const pluralNouns = lotsOPluralNouns[Math.floor(Math.random() * lotsOPluralNouns.length)]; //NEW
 
   const format1a = `${pronounSet}, ${noun_1Set}, have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
