@@ -73,8 +73,8 @@ function insultToString() {
   const adj_1Set = randomInsult.adjective_1[Math.floor(Math.random() * randomInsult.adjective_1.length)];
   const adj_2Set = randomInsult.adjective_2[Math.floor(Math.random() * randomInsult.adjective_2.length)];
   const adjSpecialSet = lotsOAdjs[Math.floor(Math.random() * lotsOAdjs.length)];
-  const numberSet = Numbers;//Numbers[Math.floor(Math.random() * Numbers.length)]; //NEW
-  const pluralNouns = lotsOPluralNouns[Math.floor(Math.random() * lotsOPluralNouns.length)]; //NEW
+  const numberSet = Numbers;//Numbers[Math.floor(Math.random() * Numbers.length)]; (same number gets generated until browser refreshes)
+  const pluralNouns = lotsOPluralNouns[Math.floor(Math.random() * lotsOPluralNouns.length)];
 
   const format1a = `${pronounSet}, ${noun_1Set}, have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
   const format1b = `${pronounSet}, ${noun_2Set}!`;
@@ -102,8 +102,8 @@ function insultToString() {
   const format11 = `You ${nounSpecialSet2} ${verbSpecialSet2}, ${adjSpecialSet} ${nounSpecialSet}!`;
   const format12 = `Your ${noun_1Set} ${verbs_3Set}s you because you ${verbSpecialSet3} the ${nounSpecialSet}.`;
   const format13 = `I'd rather ${verbSpecialSet} a ${animals} than be with you.`;
-  const format14 = `You're an overgrown ${noun_4Set} who ${verbSpecialSet3} ${numberSet} ${pluralNouns}.`; //NEW
-  const format15 = `Ha, ha... ${adjSpecialSet} ${pluralNouns} are always trying to ${verbs_3Set} you.`; //NEW
+  const format14 = `You're an overgrown ${noun_4Set} who ${verbSpecialSet3} ${numberSet} ${pluralNouns}.`;
+  const format15 = `Ha, ha... ${adjSpecialSet} ${pluralNouns} are always trying to ${verbs_3Set} you.`;
   const formats2_15 = [format2, format3, format4a, format4b, format5, format6, format7, format8, format9, format10, format11, format12, format13, format14, format15];
   
   switch (`${pronounSet}`) {
