@@ -1,12 +1,14 @@
-#README
+# README
+
 *Insult Generator*
 ___
 
-##About
+## About
+
 Insult Generator is a simple and silly game in which a user presses a button and recieves an "insult". The insults aren't always directed to the user. 
 No curse words are used in the output.
 
-###More Info
+### More Info
 * File structure is simple.
 * Includes an .htaccess file to hide the ".html" extension in the browser
 * Functionality is simple - JavaScript
