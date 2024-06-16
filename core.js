@@ -76,58 +76,58 @@ function insultToString() {
   const numberSet = Numbers;//Numbers[Math.floor(Math.random() * Numbers.length)]; (same number gets generated until browser refreshes)
   const pluralNouns = lotsOPluralNouns[Math.floor(Math.random() * lotsOPluralNouns.length)];
 
-  const format1a = `${pronounSet}, ${noun_1Set}, have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
-  const format1b = `${pronounSet}, ${noun_2Set}!`;
-  const format1c = `You ${nounSpecialSet} sucker!`;
-  const formats1_1c = [format1a, format1b, format1c];
+  const Format1 = `${pronounSet}, ${noun_1Set}, have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
+  const Format2 = `${pronounSet}, ${noun_2Set}!`;
+  const Format3 = `You ${nounSpecialSet} sucker!`;
+  const Format1-Format3 = [Format1, Format2, Format3];
 
-  const format1d = `The ${noun_3Set} wishes you to have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
-  const format1e = `${pronounSet} ${verbs_2Set} you.`;
-  const formats1d_1e = [format1d, format1e];
+  const Format4 = `The ${noun_3Set} wishes you to have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
+  const Format5 = `${pronounSet} ${verbs_2Set} you.`;
+  const Format4-Format5 = [Format4, Format5];
 
-  const formatLove = `I ${verbs_2Set} you ...just kidding.`;
-  const formatLove2 = `I ${verbs_2Set} ${verbSpecialSet2} my ${animals}.`;
-  const formatsLove = [formatLove, formatLove2];
+  const Format6 = `I ${verbs_2Set} you ...just kidding.`;
+  const Format7 = `I ${verbs_2Set} ${verbSpecialSet2} my ${animals}.`;
+  const Format6-Format7 = [Format6, Format7];
 
-  const format2 = `${pronounSet} ${noun_1Set} has a ${adj_1Set} and ${adj_2Set} ${noun_2Set}.`;
-  const format3 = `You, ${adj_1Set}, ${adj_2Set}  ${noun_2Set}!`;
-  const format4a = `You have a ${adj_1Set} ${nounSpecialSet}!`;
-  const format4b = `You have a ${adj_2Set} ${nounSpecialSet}!`;
-  const format5 = `You ${verbsSet} like a ${noun_1Set}!`;
-  const format6 = `Your ${nounSpecialSet} ${verbs_3Set}s you because you're an ${noun_4Set}.`;
-  const format7 = `Go ${verbSpecialSet} my ${nounSpecialSet}.`;
-  const format8 = `Your ${noun_1Set} wants to ${verbSpecialSet} you.`;
-  const format9 = `The ${noun_3Set} orders you to ${verbSpecialSet} your ${noun_1Set}.`;
-  const format10 = `You're an ${noun_4Set}.`;
-  const format11 = `You ${nounSpecialSet2} ${verbSpecialSet2}, ${adjSpecialSet} ${nounSpecialSet}!`;
-  const format12 = `Your ${noun_1Set} ${verbs_3Set}s you because you ${verbSpecialSet3} the ${nounSpecialSet}.`;
-  const format13 = `I'd rather ${verbSpecialSet} a ${animals} than be with you.`;
-  const format14 = `You're an overgrown ${noun_4Set} who ${verbSpecialSet3} ${numberSet} ${pluralNouns}.`;
-  const format15 = `Ha, ha... ${adjSpecialSet} ${pluralNouns} are always trying to ${verbs_3Set} you.`;
-  const formats2_15 = [format2, format3, format4a, format4b, format5, format6, format7, format8, format9, format10, format11, format12, format13, format14, format15];
+  const Format8 = `${pronounSet} ${noun_1Set} has a ${adj_1Set} and ${adj_2Set} ${noun_2Set}.`;
+  const Format9 = `You, ${adj_1Set}, ${adj_2Set}  ${noun_2Set}!`;
+  const Format10 = `You have a ${adj_1Set} ${nounSpecialSet}!`;
+  const Format11 = `You have a ${adj_2Set} ${nounSpecialSet}!`;
+  const Format12 = `You ${verbsSet} like a ${noun_1Set}!`;
+  const Format13 = `Your ${nounSpecialSet} ${verbs_3Set}s you because you're an ${noun_4Set}.`;
+  const Format14 = `Go ${verbSpecialSet} my ${nounSpecialSet}.`;
+  const Format15 = `Your ${noun_1Set} wants to ${verbSpecialSet} you.`;
+  const Format16 = `The ${noun_3Set} orders you to ${verbSpecialSet} your ${noun_1Set}.`;
+  const Format17 = `You're an ${noun_4Set}.`;
+  const Format18 = `You ${nounSpecialSet2} ${verbSpecialSet2}, ${adjSpecialSet} ${nounSpecialSet}!`;
+  const Format19 = `Your ${noun_1Set} ${verbs_3Set}s you because you ${verbSpecialSet3} the ${nounSpecialSet}.`;
+  const Format20 = `I'd rather ${verbSpecialSet} a ${animals} than be with you.`;
+  const Format21 = `You're an overgrown ${noun_4Set} who ${verbSpecialSet3} ${numberSet} ${pluralNouns}.`;
+  const Format22 = `Ha, ha... ${adjSpecialSet} ${pluralNouns} are always trying to ${verbs_3Set} you.`;
+  const Format8-Format22 = [Format8, Format9, Format10, Format11, Format12, Format13, Format14, Format15, Format16, Format17, Format18, Format19, Format20, Format21, Format22];
   
   switch (`${pronounSet}`) {
     case 'You':
-    const randomFormatA = Math.floor(Math.random() * formats1_1c.length);
-    const randomFormatAString = formats1_1c[randomFormatA];
-    insultResult.textContent = randomFormatAString.toString();
+    const randomFormat1 = Math.floor(Math.random() * Format1-Format3.length);
+    const randomFormat1String = Format1-Format3[randomFormat1];
+    insultResult.textContent = randomFormat1String.toString();
     break;
     case 'I':
-    const randomFormatB = Math.floor(Math.random() * formats1d_1e.length);
-    const randomFormatBString = formats1d_1e[randomFormatB];
-    insultResult.textContent = randomFormatBString.toString();
+    const randomFormat2 = Math.floor(Math.random() * Format4-Format5.length);
+    const randomFormat2String = Format4-Format5[randomFormat2];
+    insultResult.textContent = randomFormat2String.toString();
     switch (`${verbs_2Set}`) {
       case 'love':
-      const randomFormatLove = Math.floor(Math.random() * formatsLove.length);
-      const randomFormatLoveString = formatsLove[randomFormatLove];
-      insultResult.textContent = randomFormatLoveString.toString(); 
+      const randomFormat3 = Math.floor(Math.random() * Format6-Format7.length);
+      const randomFormat3String = Format6-Format7[randomFormat3];
+      insultResult.textContent = randomFormat3String.toString(); 
       break;
     }
     break;
     default:
-    const randomFormatC = Math.floor(Math.random() * formats2_15.length);
-    const randomFormatCString = formats2_15[randomFormatC];
-    insultResult.textContent = randomFormatCString.toString();
+    const randomFormatDefault = Math.floor(Math.random() * Format8-Format22.length);
+    const randomFormatDefaultString = Format8-Format22[randomFormatDefault];
+    insultResult.textContent = randomFormatDefaultString.toString();
   }
 
   return insultResult.textContent;
