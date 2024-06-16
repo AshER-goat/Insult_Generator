@@ -79,15 +79,15 @@ function insultToString() {
   const Format1 = `${pronounSet}, ${noun_1Set}, have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
   const Format2 = `${pronounSet}, ${noun_2Set}!`;
   const Format3 = `You ${nounSpecialSet} sucker!`;
-  const Format1-Format3 = [Format1, Format2, Format3];
+  const Format1_Format3 = [Format1, Format2, Format3];
 
   const Format4 = `The ${noun_3Set} wishes you to have a ${adj_1Set} and ${adj_2Set}  ${noun_2Set}.`;
   const Format5 = `${pronounSet} ${verbs_2Set} you.`;
-  const Format4-Format5 = [Format4, Format5];
+  const Format4_Format5 = [Format4, Format5];
 
   const Format6 = `I ${verbs_2Set} you ...just kidding.`;
   const Format7 = `I ${verbs_2Set} ${verbSpecialSet2} my ${animals}.`;
-  const Format6-Format7 = [Format6, Format7];
+  const Format6_Format7 = [Format6, Format7];
 
   const Format8 = `${pronounSet} ${noun_1Set} has a ${adj_1Set} and ${adj_2Set} ${noun_2Set}.`;
   const Format9 = `You, ${adj_1Set}, ${adj_2Set}  ${noun_2Set}!`;
@@ -104,29 +104,29 @@ function insultToString() {
   const Format20 = `I'd rather ${verbSpecialSet} a ${animals} than be with you.`;
   const Format21 = `You're an overgrown ${noun_4Set} who ${verbSpecialSet3} ${numberSet} ${pluralNouns}.`;
   const Format22 = `Ha, ha... ${adjSpecialSet} ${pluralNouns} are always trying to ${verbs_3Set} you.`;
-  const Format8-Format22 = [Format8, Format9, Format10, Format11, Format12, Format13, Format14, Format15, Format16, Format17, Format18, Format19, Format20, Format21, Format22];
+  const Format8_Format22 = [Format8, Format9, Format10, Format11, Format12, Format13, Format14, Format15, Format16, Format17, Format18, Format19, Format20, Format21, Format22];
   
   switch (`${pronounSet}`) {
     case 'You':
-    const randomFormat1 = Math.floor(Math.random() * Format1-Format3.length);
-    const randomFormat1String = Format1-Format3[randomFormat1];
+    const randomFormat1 = Math.floor(Math.random() * Format1_Format3.length);
+    const randomFormat1String = Format1_Format3[randomFormat1];
     insultResult.textContent = randomFormat1String.toString();
     break;
     case 'I':
-    const randomFormat2 = Math.floor(Math.random() * Format4-Format5.length);
-    const randomFormat2String = Format4-Format5[randomFormat2];
+    const randomFormat2 = Math.floor(Math.random() * Format4_Format5.length);
+    const randomFormat2String = Format4_Format5[randomFormat2];
     insultResult.textContent = randomFormat2String.toString();
     switch (`${verbs_2Set}`) {
       case 'love':
-      const randomFormat3 = Math.floor(Math.random() * Format6-Format7.length);
-      const randomFormat3String = Format6-Format7[randomFormat3];
+      const randomFormat3 = Math.floor(Math.random() * Format6_Format7.length);
+      const randomFormat3String = Format6_Format7[randomFormat3];
       insultResult.textContent = randomFormat3String.toString(); 
       break;
     }
     break;
     default:
-    const randomFormatDefault = Math.floor(Math.random() * Format8-Format22.length);
-    const randomFormatDefaultString = Format8-Format22[randomFormatDefault];
+    const randomFormatDefault = Math.floor(Math.random() * Format8_Format22.length);
+    const randomFormatDefaultString = Format8_Format22[randomFormatDefault];
     insultResult.textContent = randomFormatDefaultString.toString();
   }
 
